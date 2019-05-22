@@ -1,0 +1,30 @@
+This week we implemented a version of prime number sieve with a coroutine library. 
+
+Coroutine library for C cloned from https://github.com/baruch/libwire.
+
+From the description the libwire is made to resemble the goroutines of GoLang. 
+
+Library built with CMake, example program compliled with gcc 8.3.1 and run on Linux Fedora.
+
+
+Control Transfer Mechanism: Symmetric or Assymmetric
+
+Although we have the functions suspend and resume, these functions do not return control to the invoker of the current thread. 
+The libwire coroutines are thus symmetric. There is a queue of ready-to-go threads, which are executed in FIFO order,
+with init or resume placing a new thread to the end of the queue and with suspend taking the currently running thread
+out of the ready queue. 
+
+
+First-Class Objects or Constrained
+
+The libwire coroutines are not constrained to any context and have the flexibility to be created/resumed/suspended anywhere - 
+so they are first class objects.
+
+
+Stackfullness
+
+Libwire coroutines use a preallocated stack to work in and are able to resume to the same state and place of 
+execution when they were yielding/suspended even within nested loop structure
+
+We can thus say that libwire coroutines are full symmetric coroutines
+
