@@ -1,0 +1,43 @@
+~$ mpiexec -n 20 ./sigs 10 5 4
+
+Set 14 : 1 1 0 1 0 0 0 0 1 1
+
+Hash 15 : 3 9 2 7
+
+Set 10 : 0 1 1 0 0 0 1 1 1 0
+
+Hash 18 : 0 2 6 4
+
+Set 13 : 1 1 0 1 0 1 1 0 1 1
+
+Set 11 : 1 0 1 1 0 0 0 0 0 1
+
+Hash 16 : 2 7 4 8
+
+Hash 17 : 1 4 7 3
+
+Set 12 : 1 1 1 0 0 0 1 0 1 1
+
+Signature for set 12 : 9 2 1 0
+
+Signature for set 10 : 2 2 1 2
+
+Signature for set 13 : 3 8 1 0
+
+Signature for set 11 : 3 2 3 0
+
+Signature for set 14 : 3 8 1 0
+
+Candidate pair 11 and 13 with count 2
+
+Candidate pair 13 and 14 with count 4
+
+Candidate pair 11 and 14 with count 2
+
+Candidate pair 11 and 12 with count 2
+
+Candidate pair 10 and 12 with count 2
+
+Candidate pair 12 and 13 with count 2
+
+Candidate pair 12 and 14 with count 2
