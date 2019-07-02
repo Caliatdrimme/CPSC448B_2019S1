@@ -11,9 +11,9 @@ So far:
 - robust to changes of number of elements, sets, hashes, and lenghts of hashes (provided length of hash <= number of elements)
 
 TODO: 
-- get working with fgmpi 
+- get working with fgmpi (was working before, something broke in fgmpi build - "undefined reference to `FGmpiexec'")
 - validate on a real data set (have data be read by a process and passed onto element and set processes through messages - unsure of format yet)
-- possibly implement a banding candidate pairs finding technique for larger datasets
+- possibly implement a banding candidate pairs finding technique for larger datasets?
 - refactor/improve readability and code effeciency
 
 
